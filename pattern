@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+int main(){
+
+	int i,j,l,n=4;
+	for ( i = -n+1; i < n; i++)
+	{
+	    //for space
+	    //int l = i < 0 ? l = -i : l - i;
+	    if(i>0)
+	        l=i;
+	    else
+	        l=-i;
+	        
+	    int s;
+	    for ( s = 0;  s < n-l-1; s++ )
+	    {
+	        printf(" ");
+	    }
+	    // for star
+		for( j = 0; j < l+1; j++)
+		{
+		    printf("* ");
+		}
+		printf("\n");
+	}
+}
